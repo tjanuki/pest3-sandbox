@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class UpdateUser
 {
 
-    public function handle(User $user, UserUpdateRequest $request) : void
+    public function handle(User $user, UserUpdateRequest $request)
     {
         $user->update($request->all());
     }
